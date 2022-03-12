@@ -1,0 +1,17 @@
+cria o ambiente virtual
+
+python -m venv venv 
+
+Ativa o ambiente virtual
+.\venv\Scripts\activate
+
+AGORA NO AMBIENTE VIRTUAL INSTALAR O FLASH
+pip install flask
+
+variaveis de ambiente
+pip install python-dotenv
+
+arquivo para as variaveis de ambiente
+.flaskenv
+FLASK_APP=microblog.py
+FLASK_ENV=development
