@@ -15,3 +15,21 @@ arquivo para as variaveis de ambiente
 .flaskenv
 FLASK_APP=microblog.py
 FLASK_ENV=development
+
+executa o servidor
+flask run
+
+para usar o flask como serviço web é necessario instalar o gunicorn
+pip install gunicorn
+
+gerar um arquivo procfile e copiar estes comandos abaixo:
+web: gunicorn -b :$PORT microblog:app 
+
+instalar o pip freeze > requirements.txt.txt
+
+** retirou do arquivo .flaskenv 
+
+FLASK_ENV=development
+
+para informar que não é mais de desenvolvimento é de produção.
+depois coloca de novo.
